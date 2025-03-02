@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./keyboard1.js"></script>
+</head>
+<body>
+    <h1>Enter your Name</h1>
+    <div>
+        <!-- <input type="text" id="txt" onkeyup="getData(event)" /><br> -->
+        <!-- <input type="text" id="txt" onkeypress="getData(event)"> <br> -->
+        <input type="text" id="txt" onkeydown="getData(event)"><br> 
+        <span id="nameValue"></span><br>
+        <span id="nameError"></span>
+    </div>
+</body>
+</html>
+
+<!-- 
+onkeydown
+Triggered when a key is pressed down.
+Fires before the key is actually typed. 
+Useful for detecting when typing is finished.
+
+
+onkeyup
+Triggered when a key is released.
+Fires after the key press action is completed.
+Useful for detecting when typing is finished.
+
+onkeypress (⚠️ Deprecated)
+Triggered when a printable character key is pressed.
+Doesn’t detect non-character keys (Shift, Ctrl, etc.).
+Now replaced by onkeydown and onkeyup.
+-->

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="mouse_2.js"></script>
+</head>
+<body>
+    <div
+       id="mydiv"
+       style="height: 400px; width: 400px; background-color: antiquewhite;"
+       onmouseover="changeShape()"
+       onmouseleave="changeColor()"
+       onmousedown="changeShape1()"
+       onmouseup="changeColor1()"
+    ></div>
+</body>
+</html>
+
+<!-- 
+onmouseover - Mouse Enters an Element
+📌 Use Case: Showing a tooltip when the user hovers over an element.
+
+onmouseleave - Mouse Leaves an Element
+📌 Use Case: Hiding a tooltip or removing a hover effect.
+
+🔹 onmousedown - Mouse Button Pressed Down
+📌 Use Case: Changing button color when the user presses it.
+
+🔹 onmouseup - Mouse Button Released
+📌 Use Case: Completing a click event only when the mouse is released.
+-->

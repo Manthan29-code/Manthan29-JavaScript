@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form_student.js"></script>
+</head>
+<body>
+    <form onsubmit="student_data(event)">
+        <label for="fname">First name:-</label>
+        <input type="text" id="fname"><br>
+
+        <label for="lname">First name:-</label>
+        <input type="text" id="lname"><br>
+        
+        <label for="cname">College</label>
+        <input type="text" id="cname"><br>
+        
+        <label for="er_noumber">Enrollment no.</label>
+        <input type="text" id="er_number"><br>
+        
+        <label for="ph_noumber">Phone no.</label>
+        <input type="tel" id="ph_number"><br>
+
+        <label >Gender</label><br>
+        MALE:- <input type="radio", name="gender" value="male"><br>
+        FEMALE:- <input type="radio", name="gender" value="female"><br>
+
+        <label >year</label>
+        <select id="year">
+            <option value="First">First</option>
+            <option value="Second">Second</option>
+            <option value="Third">Third</option>
+            <option value="Forth">Forth</option>
+        </select><br>
+        
+        <label for="cgpi">CGPI</label>
+        <input type="number" min="0" max=10 id="cgpi"><br>
+         
+        <input type="submit" name="submit">
+    </form>
+        <!-- <table border="solid" bordercolor="red"  id="table"  style="display: none;"> -->
+        <table border="solid" bordercolor="red"  id="table"  hidden>
+            <tr>
+                <td>Name</td>
+                <td id="fullname" colspan="3"></td>
+            </tr>
+            <tr>
+                <td>College</td>
+                <td id="college_name" colspan="3"></td>
+            </tr>
+            <tr>
+                <td>Enrollment No.</td>
+                <td id="Enrollment_number" colspan="3"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td id="phone_number" colspan="3"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td id="gender" colspan="3"></td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td id="Year"></td>
+                <td>CGPI</td>
+                <td id="CGPI"></td>
+            </tr>
+        </table>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form_validation02.js"> </script>
+
+</head>
+<body>
+    <h1>Feedback form</h1>
+    <form onsubmit="form_feedback(event)">
+    <div>
+        <label >Name:-</label>
+        <input type="text" name="name" placeholder="Enter name" id="name">
+        <span id="name_error"></span>
+    </div>
+    <div>
+        <label >Email:-</label>
+        <input type="email" name="email"  id="email">
+        <span id="email_error"></span>
+    </div>
+    <div>
+        <label >Rate us:-</label><br>
+        <input type="radio" name="rate_us" >1)
+        <input type="radio" name="rate_us" >2)
+        <input type="radio" name="rate_us" >3)
+        <input type="radio" name="rate_us" >4)
+        <input type="radio" name="rate_us" >5)
+        <span id="rating_error"></span>
+    </div>
+    <div>
+        <label >Feedback</label><br>
+        <textarea name="feedback" id="feedback" rows="5"></textarea>
+        <span id="feedback_error"></span>
+    </div>
+    <div>
+        <input type="submit" value="submit">
+    </div>
+</form>
+</body>
+</html>

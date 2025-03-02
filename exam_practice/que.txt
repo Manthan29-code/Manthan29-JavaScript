@@ -1,0 +1,10 @@
+map - Get an array of product names.
+filter - Find all products with a price greater than 10,000.
+reduce - Calculate the total stock available for all products.
+find - Find the first product with a rating above 4.6.
+some - Check if there is any product under ₹5000.
+every - Verify if all products have a rating of at least 4.3.
+sort - Sort products in descending order of price.
+flatMap - Get a flat array of all product variations.
+includes - Check if the category list contains "Electronics".
+forEach - Print each product’s name along with its price.

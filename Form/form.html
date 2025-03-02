@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js"></script>
+</head>
+<body>
+    <form onsubmit="submitHandler(event)">
+        <div>
+            <label >Name</label>
+            <input type="text" id="name" placeholder="Enter Name">
+        </div>
+        <div>
+            <label > Age</label>
+            <input type="text" id="age" placeholder="enter Age">
+        </div>
+        <div>
+            <label >Email</label>
+            <input type="email" id="email" placeholder="enter Email">
+        </div>
+        <div>
+            <label >Country</label>
+            <select id="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select>
+        </div>
+        <div>
+            <label >Fav color</label>
+            <input type="color" id="favColor">
+        </div>
+        <div>
+            <label >Gender</label><br>
+            MALE:- <input type="radio", name="gender" value="male"><br>
+            FEMALE:- <input type="radio", name="gender" value="female"><br>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <div id="result">
+        <h1 id="nameValue"></h1>
+        <h3 id="ageValue"></h3>
+        <h3 id="emailValue"></h3>
+        <h3 id="countryValue"></h3>
+        <h3 id="genderValue"></h3>
+
+    </div>
+</body>
+</html>
